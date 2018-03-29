@@ -4,6 +4,11 @@
 <remote name="opengapps"
         fetch="https://github.com/opengapps/"
         revision="master" />
+<remote name="vicamo"
+        fetch="https://github.com/vicamo/"
+        revision="master" />
+
+<project path="device/opengapps" name="opengapps_device" revision="master" remote="vicamo" />
 
 <project path="vendor/opengapps/build" name="aosp_build" remote="opengapps" />
 <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" remote="opengapps" />
